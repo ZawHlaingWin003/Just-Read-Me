@@ -1,0 +1,43 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family: Neutra;
+        src: url(/public/frontend/assets/fonts/neutra/NeutraDisp-Titling.otf);
+    }
+
+    @font-face {
+        font-family: Fira;
+        src: url(/public/frontend/assets/fonts/fira/FiraCode-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: Harriet;
+        src: url(/public/frontend/assets/fonts/harriet/HARRIETTEXTREGULAR.OTF);
+    }
+
+    body {
+        font-family: Harriet;
+        font-size: .9rem;
+        letter-spacing: .03em;
+        /* color: #374151; */
+        color: rgba(1, 22, 39, 1);
+        background-color: #F9FBFD;
+    }
+}
+
+/* @layer components {
+    .btn-primary {
+        @apply text-white text-xs px-5 py-2 shadow-md rounded-md font-big-title tracking-widest bg-primary-900 border-2 border-primary-900 hover:bg-white hover:text-primary-900 focus:outline-none focus:ring-2 focus:ring-primary-700 focus:ring-opacity-30 active:bg-opacity-30 active:ring-primary-500;
+    }
+} */
+
+@layer components {
+    label.required {
+        @apply before:text-red-600 before:content-['*'] before:mr-1;
+    }
+}
